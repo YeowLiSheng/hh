@@ -1,8 +1,13 @@
 <?php
+
+
 session_start(); // Start the session
 
 // Include the database connection file
 include("dataconnection.php"); 
+
+
+
 
 // Check if the user is logged in
 if (!isset($_SESSION['id'])) {
@@ -49,7 +54,7 @@ if (isset($_POST['submitbtn'])) {
                 document.addEventListener('DOMContentLoaded', function() {
                     Swal.fire({
                         title: 'Success',
-                        text: 'Address has been added successfully.',
+                        text: 'Address has  been added successfully.',
                         icon: 'success',
                         confirmButtonText: 'OK'
                     }).then(function() {
